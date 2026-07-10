@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+          
+      - name: List Repository Files
+        run: ls -R
 
-      - name: Print Hello
-        run: echo "GitHub Actions is working!"
+      - name: Show Current Directory
+        run: pwd
